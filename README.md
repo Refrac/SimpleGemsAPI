@@ -13,31 +13,25 @@ softdepend:
 ```
 
 ```JAVA
-public double getGems(Player player) {
-    return GemsAPI.INSTANCE.getGems(player);
-}
+GemsAPI.INSTANCE.getGems(player);
 
-public boolean hasGems(Player player, double amount) {
-    return GemsAPI.INSTANCE.hasGems(player, amount);
-}
+GemsAPI.INSTANCE.getOfflineGems(player);
 
-public void giveGemsItem(Player player, int amount) {
-    GemsAPI.INSTANCE.giveGemsItem(player, amount);
-}
+GemsAPI.INSTANCE.hasGems(player, amount);
 
-public ItemStack getGemsItem() {
-    return GemsAPI.INSTANCE.getGemsItem();
-}
+GemsAPI.INSTANCE.hasOfflineGems(player, amount);
 
-public void giveGems(Player player, double amount) {
-    GemsAPI.INSTANCE.giveGems(player, amount);
-}
+GemsAPI.INSTANCE.giveGemsItem(player, amount);
 
-public void takeGems(Player player, double amount) {
-    GemsAPI.INSTANCE.takeGems(player, amount);
-}
+GemsAPI.INSTANCE.giveGems(player, amount);
 
-public void setGems(Player player, double amount) {
-    GemsAPI.INSTANCE.setGems(player, amount);
-}
+GemsAPI.INSTANCE.giveOfflineGems(player, amount);
+
+GemsAPI.INSTANCE.takeGems(player, amount);
+
+GemsAPI.INSTANCE.takeOfflineGems(player, amount);
+
+GemsAPI.INSTANCE.setGems(player, amount);
+
+GemsAPI.INSTANCE.setOfflineGems(player, amount);
 ```
