@@ -1,15 +1,15 @@
 # SimpleGemsAPI
-Welcome to the official PandorianGemsAPI!
+Welcome to the official SimpleGemsAPI!
 
 # API Usage
-Import the PandorianGemsAPI.jar into your project.
+Import the SimpleGemsAPI.jar into your project.
 Make sure you add PandorianGems to your depends or softdepends
 ```YAML
 depend:
-  - PandorianGems
+  - SimpleGems
 
 softdepend:
-  - PandorianGems
+  - SimpleGems
 ```
 
 ```JAVA
@@ -19,14 +19,6 @@ public double getGems(Player player) {
 
 public boolean hasGems(Player player, double amount) {
     return GemsAPI.INSTANCE.hasGems(player, amount);
-}
-
-public void payGems(Player player, Player target, double amount, boolean silent) {
-    GemsAPI.INSTANCE.payGems(player, target, amount, false);
-}
-
-public void withdrawGems(Player player, int amount) {
-    GemsAPI.INSTANCE.withdrawGems(player, amount);
 }
 
 public void giveGemsItem(Player player, int amount) {
