@@ -3,7 +3,7 @@ Welcome to the official SimpleGemsAPI!
 
 # API Usage
 Import the SimpleGemsAPI.jar into your project.
-Make sure you add PandorianGems to your depends or softdepends
+Make sure you add SimpleGems to your depends or softdepends
 ```YAML
 depend:
   - SimpleGems
