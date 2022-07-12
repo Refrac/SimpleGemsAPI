@@ -19,11 +19,11 @@
  * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package me.refrac.simplegems.api;
+package me.refracdevelopment.simplegems.api;
 
-import me.refrac.simplegems.plugin.manager.ProfileData;
+import me.refracdevelopment.simplegems.plugin.manager.ProfileData;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
 /**
@@ -60,14 +60,12 @@ public class GemsAPI {
     }
 
     /**
-     * This will pay gems to the specified player
+     * Used to get offline player gems.
      *
-     * @param player player profile
-     * @param target target profile
-     * @param amount paid gems
-     * @param silent silent gems
+     * @param player player
+     * @return Player's gems
      */
-    public void payGems(Player player, Player target, double amount, boolean silent) {
+    public double getOfflineGems(OfflinePlayer player) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -95,12 +93,33 @@ public class GemsAPI {
     }
 
     /**
+     * Used to check if the offline player has enough gems
+     *
+     * @param player player
+     * @param amount gems
+     * @return If the player has enough gems
+     */
+    public boolean hasOfflineGems(Player player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
      * Used to give player gems.
      *
      * @param player player
      * @param amount gems
      */
     public void giveGems(Player player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to give offline player gems.
+     *
+     * @param player player
+     * @param amount gems
+     */
+    public void giveOfflineGems(OfflinePlayer player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 
@@ -115,12 +134,32 @@ public class GemsAPI {
     }
 
     /**
+     * Used to take offline player gems.
+     *
+     * @param player data
+     * @param amount gems
+     */
+    public void takeOfflineGems(OfflinePlayer player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
      * Used to set player gems.
      *
      * @param player data
      * @param amount gems
      */
     public void setGems(Player player, double amount) {
+        throw new IllegalPluginAccessException("API is not registered!");
+    }
+
+    /**
+     * Used to set offline player gems.
+     *
+     * @param player data
+     * @param amount gems
+     */
+    public void setOfflineGems(OfflinePlayer player, double amount) {
         throw new IllegalPluginAccessException("API is not registered!");
     }
 }
