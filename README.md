@@ -2,24 +2,7 @@
 Welcome to the official SimpleGemsAPI!
 
 # API Usage
-Import the SimpleGemsAPI.jar or use maven.
-
-### Maven
-
-```POM
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
-```
-
-```POM
-<dependency>
-    <groupId>com.github.RefracDevelopment</groupId>
-    <artifactId>SimpleGemsAPI</artifactId>
-    <version>2.0</version>
-</dependency>
-```
+Import the SimpleGemsAPI.jar into your project.
 
 Make sure you add SimpleGems to your depends or softdepends
 ```YAML
