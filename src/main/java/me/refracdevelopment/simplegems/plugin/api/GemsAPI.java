@@ -19,9 +19,10 @@
  * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package me.refracdevelopment.simplegems.api;
+package me.refracdevelopment.simplegems.plugin.api;
 
-import me.refracdevelopment.simplegems.api.manager.*;
+import me.refracdevelopment.simplegems.plugin.api.manager.ProfileData;
+import me.refracdevelopment.simplegems.plugin.api.manager.ProfileManager;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
 /**
