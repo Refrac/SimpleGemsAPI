@@ -19,41 +19,52 @@
  * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package me.refracdevelopment.simplegems.api;
+package me.refracdevelopment.simplegems.api.manager;
 
-import me.refracdevelopment.simplegems.api.manager.*;
+import me.refracdevelopment.simplegems.plugin.manager.Profile;
 import org.bukkit.plugin.IllegalPluginAccessException;
 
-/**
- * The SimpleGemsAPI allows you to hook into SimpleGems to either modify and grab data
- * or to add new features and events.
- */
-public class GemsAPI {
-    public static GemsAPI INSTANCE;
+import java.util.Map;
+import java.util.UUID;
+
+public class ProfileManager {
 
     /**
-     * @return Is the SimpleGemsAPI enabled and registered?
+     * Used to create a player's profile.
+     * This is done on the first join of the player.
+     *
+     * @param uuid Player's UUID
+     * @param name Player's name
      */
-    public static boolean isRegistered() {
+    public void handleProfileCreation(UUID uuid, String name) {
         throw new IllegalPluginAccessException("SimpleGemsAPI is not registered!");
     }
 
     /**
-     * The #getProfileManager method allows you to use settings inside the
-     * profile management class. This gives you info on gems, settings, and more.
+     * Used to get a player's profile.
      *
-     * @return player's profile.
+     * @param object Player's UUID or Name
+     * @return Player's profile
      */
-    public ProfileManager getProfileManager() {
+    public Profile getProfile(Object object) {
         throw new IllegalPluginAccessException("SimpleGemsAPI is not registered!");
     }
 
     /**
-     * The #getProfileData method allows you to get a player's profile data.
+     * Used to get the list of profiles.
      *
-     * @return player's profile data.
+     * @return List of profiles
      */
-    public ProfileData getProfileData() {
+    public Map<UUID, Profile> getProfiles() {
+        throw new IllegalPluginAccessException("SimpleGemsAPI is not registered!");
+    }
+
+    /**
+     * Used to set the list of profiles.
+     *
+     * @param profiles List of profiles
+     */
+    public void setProfiles(Map<UUID, Profile> profiles) {
         throw new IllegalPluginAccessException("SimpleGemsAPI is not registered!");
     }
 }
