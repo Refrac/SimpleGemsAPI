@@ -1,6 +1,8 @@
 # SimpleGemsAPI
 Welcome to the official SimpleGemsAPI!
 
+### Note: The API is now available inside of the main plugin jar.
+
 # API Usage
 Import the SimpleGemsAPI.jar into your project.
 
